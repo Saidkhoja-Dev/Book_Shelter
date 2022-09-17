@@ -1,0 +1,157 @@
+/* Google Fonts */
+
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'), 
+    url('../fonts/rubik-v21-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v21-latin-500.woff2') format('woff2'), 
+    url('../fonts/rubik-v21-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'), 
+    url('../fonts/noto-sans-v27-latin-500.woff') format('woff'); 
+}
+
+/* General CSS Styles */
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Rubik', 'Arial', sans-serif;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text__blinker {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.card {
+    transition: all 0.6s ease;
+    display: flex;  
+    align-items: stretch;
+}
+
+.card:hover {
+    box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+}
+
+.label {
+    width: 607px;
+    background: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 14px;
+}
+
+.search__input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 500px;
+}
+
+.book__name {
+    width : 250px;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.book__auth {
+    display: -webkit-box;
+    max-width: 300px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.darkmode{
+    color: #696868;
+    background-color: #222831;
+}
+
+.bookmark__delete-btn {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#dark-mode-toggle {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#dark-mode-toggle > img {
+    transition: all 1s ease;
+}
+
+#dark-mode-toggle > img:hover {
+    transform: scale(1.5);
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+/* By Kho'ja */
